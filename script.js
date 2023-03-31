@@ -10,22 +10,22 @@ function comp(){
 	var num = (gra1 + gra2 + gra3 + gra4 + gra5 + gra6 + gra7) / 7
 	
 	if(num > 100){
-		window.alert("Error Occured: Value is not an acceptable grade. " + num);
+		window.alert("Error Occured: Value is not an acceptable grade. " + num.tofixed(0));
 	}
 	else if(num <= 100 && num >=90){
-		window.alert("OUTSTANDING! " + num);
+		window.alert("OUTSTANDING! " + num.tofixed(0));
 	}
 	else if(num <= 89 && num >= 85){
-		window.alert("Very Satisfactory " + num);
+		window.alert("Very Satisfactory " + num.tofixed(0));
 	}
 	else if(num <= 84 && num >= 80){
-		window.alert("Satisfactory " + num);
+		window.alert("Satisfactory " + num.tofixed(0));
 	}
 	else if(num <= 79 && num >= 75){
-		window.alert("Fairly Satisfactory " + num);
+		window.alert("Fairly Satisfactory " + num.tofixed(0));
 	}
 	else{
-		window.alert("THAT SUCKS BRUV. DID NOT MEET EXPECTATIONS BETTER LUCK NEXT TIME " + num);
+		window.alert("THAT SUCKS BRUV. DID NOT MEET EXPECTATIONS BETTER LUCK NEXT TIME " + num.tofixed(0));
 	}
 
 }
